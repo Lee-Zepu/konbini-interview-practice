@@ -1,0 +1,4 @@
+open-site.cmd
+start-local.ps1
+server.*.log
+server.log

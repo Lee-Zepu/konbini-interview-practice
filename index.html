@@ -1,0 +1,1818 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>便利店打工面试日语准备</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f4ee;
+      --paper: #fffaf1;
+      --ink: #2a2824;
+      --muted: #6f675c;
+      --line: #e5dccd;
+      --accent: #24796d;
+      --accent-2: #d56a3a;
+      --soft: #edf5f2;
+      --shadow: 0 16px 40px rgba(61, 44, 24, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Yu Gothic UI", "Microsoft YaHei UI", "Hiragino Sans", Meiryo, sans-serif;
+      background:
+        radial-gradient(circle at 12% 5%, rgba(36, 121, 109, 0.12), transparent 28rem),
+        linear-gradient(180deg, #fbf8f1 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 250, 241, 0.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .topbar {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      max-width: 100%;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: white;
+      background: var(--accent);
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 26px 20px 54px;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+      gap: 22px;
+      align-items: stretch;
+      margin-bottom: 22px;
+    }
+
+    .hero,
+    .note,
+    section {
+      background: rgba(255, 250, 241, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 28px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      max-width: 780px;
+    }
+
+    h2 {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 14px 0 0;
+      max-width: 760px;
+    }
+
+    .note {
+      padding: 22px;
+    }
+
+    .note strong {
+      color: var(--accent);
+    }
+
+    section {
+      margin-top: 18px;
+      padding: 22px;
+      scroll-margin-top: 82px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--accent);
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf8;
+      padding: 16px;
+    }
+
+    .card.compact {
+      padding: 14px;
+    }
+
+    .jp {
+      font-size: 20px;
+      line-height: 1.95;
+      margin: 10px 0;
+    }
+
+    ruby {
+      ruby-position: over;
+    }
+
+    rt {
+      color: var(--accent-2);
+      font-size: 0.55em;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    .cn {
+      color: var(--muted);
+      margin: 6px 0 0;
+      border-left: 3px solid var(--line);
+      padding-left: 10px;
+      font-size: 15px;
+    }
+
+    .question {
+      margin: 10px 0 12px;
+      padding: 12px;
+      border-radius: 8px;
+      background: var(--soft);
+      border: 1px solid #d4e6df;
+    }
+
+    .question-label,
+    .answer-label,
+    .speaker-label {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      margin: 0 0 4px;
+    }
+
+    .question .jp {
+      margin: 4px 0 0;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .turn {
+      margin: 10px 0 12px;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fffdf8;
+    }
+
+    .turn.staff {
+      background: var(--soft);
+      border-color: #d4e6df;
+    }
+
+    .turn .jp {
+      margin: 4px 0 0;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .flow {
+      display: grid;
+      gap: 14px;
+    }
+
+    .node {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf8;
+      padding: 16px;
+    }
+
+    .node-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      font-weight: 900;
+    }
+
+    .dialogue {
+      display: grid;
+      gap: 10px;
+    }
+
+    .line {
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      padding: 12px;
+      background: white;
+    }
+
+    .line.staff {
+      background: var(--soft);
+      border-color: #d4e6df;
+    }
+
+    .line.me {
+      border-color: #f0d3c3;
+      background: #fff7f1;
+    }
+
+    .speaker {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .line .jp {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.85;
+    }
+
+    .branch-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .branch {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: white;
+    }
+
+    .branch.good {
+      border-color: #cde4dc;
+      background: #f4fbf8;
+    }
+
+    .branch.end {
+      border-color: #ead4ca;
+      background: #fff7f1;
+    }
+
+    .branch h4 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .route-game {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .route-map {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      gap: 12px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf8;
+    }
+
+    .route-node {
+      min-height: 86px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      color: var(--ink);
+      padding: 12px;
+      text-align: left;
+      box-shadow: none;
+    }
+
+    .route-node:hover,
+    .route-node.active {
+      border-color: var(--accent);
+      background: var(--soft);
+      transform: translateY(-1px);
+    }
+
+    .route-node strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .route-node span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .route-node.start {
+      grid-column: span 2;
+      background: #f3fbf8;
+    }
+
+    .route-node.end {
+      background: #fff7f1;
+    }
+
+    .scene-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf8;
+      padding: 18px;
+    }
+
+    .scene-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .scene-top p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .scene-status {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--accent);
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .scene-lines {
+      display: grid;
+      gap: 10px;
+    }
+
+    .scene-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .choice-button {
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .choice-button.end-choice {
+      border-color: var(--accent-2);
+      color: var(--accent-2);
+    }
+
+    .legacy-flow {
+      margin-top: 18px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: white;
+      color: var(--ink);
+      padding: 8px 12px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button.primary {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf8;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 800;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      float: right;
+      color: var(--accent);
+    }
+
+    details[open] summary::after {
+      content: "-";
+    }
+
+    .details-body {
+      padding: 0 16px 16px;
+    }
+
+    .word-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .word {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .word .jp {
+      font-size: 18px;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      padding: 12px 12px 12px 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      position: relative;
+    }
+
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 14px;
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .hidden-cn .cn,
+    .hidden-rt rt {
+      display: none;
+    }
+
+    @media (max-width: 820px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+      }
+
+      nav {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .intro,
+      .grid,
+      .branch-grid,
+      .route-map,
+      .word-list {
+        grid-template-columns: 1fr;
+      }
+
+      .route-node.start {
+        grid-column: auto;
+      }
+
+      main {
+        padding-inline: 14px;
+      }
+
+      .hero,
+      .note,
+      section {
+        padding: 18px;
+      }
+
+      .jp {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">便利店面试日语</div>
+      <nav aria-label="页面导航">
+        <a class="active" href="#phone">电话応募</a>
+        <a href="#branch-flow">路线图</a>
+        <a href="#visit">到店询问</a>
+        <a href="#interview">正式面试</a>
+        <a href="#answers">常见回答</a>
+        <a href="#rescue">听不懂救场</a>
+        <a href="#words">关键词</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+    <div class="intro">
+      <div class="hero">
+        <h1>便利店打工面试日语准备</h1>
+        <p class="subtitle">目标不是说得华丽，而是短句、清楚、可确认。所有主要日语句子都给汉字标了假名，适合电话、到店询问和正式面试前快速复习。</p>
+        <div class="actions">
+          <button class="primary" data-expand>展开全部</button>
+          <button data-collapse>收起全部</button>
+          <button data-toggle-rt>隐藏/显示读音</button>
+          <button data-toggle-cn>隐藏/显示中文</button>
+        </div>
+      </div>
+      <aside class="note">
+        <h2>核心策略</h2>
+        <p><strong>先说来意，再说身份，再确认。</strong>听不懂时直接请对方重复或慢一点，这比误解排班、时间、地点更可靠。</p>
+        <p class="small">你的日语设定：目前 N2，正在备考 N1。面试时可以诚实说出来，比含糊说“还在学习中”更有可信度。</p>
+        <p class="small">留学生打工通常要在资格外活动许可范围内，每周 28 小时以内。面试时自然说出来，会显得你知道规则。</p>
+        <p class="small"><a href="#answers">跳到：一问一答练习区</a></p>
+      </aside>
+    </div>
+
+    <section id="question-preview">
+      <div class="section-head">
+        <h2>先听懂这些问题</h2>
+        <span class="tag">面试官常问</span>
+      </div>
+      <div class="grid">
+        <article class="card compact">
+          <p class="jp"><ruby>簡単<rt>かんたん</rt></ruby>に<ruby>自己紹介<rt>じこしょうかい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+          <p class="cn">请简单自我介绍。</p>
+        </article>
+        <article class="card compact">
+          <p class="jp"><ruby>志望動機<rt>しぼうどうき</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。</p>
+          <p class="cn">你的应聘理由是什么？</p>
+        </article>
+        <article class="card compact">
+          <p class="jp"><ruby>週<rt>しゅう</rt></ruby>に<ruby>何回<rt>なんかい</rt></ruby><ruby>入<rt>はい</rt></ruby>れますか。</p>
+          <p class="cn">每周可以上几次班？</p>
+        </article>
+        <article class="card compact">
+          <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>はどのくらいできますか。</p>
+          <p class="cn">日语大概到什么程度？</p>
+        </article>
+      </div>
+      <div class="actions">
+        <a class="button-link" href="#answers">进入一问一答练习区</a>
+      </div>
+    </section>
+
+    <section id="branch-flow">
+      <div class="section-head">
+        <h2>剧情路线图</h2>
+        <span class="tag">点击节点进入剧情</span>
+      </div>
+      <div class="route-game">
+        <div class="route-map" aria-label="便利店应聘剧情路线图">
+          <button class="route-node start active" type="button" data-scene="call-start">
+            <strong>开始：打电话询问</strong>
+            <span>确认是否还在招募</span>
+          </button>
+          <button class="route-node" type="button" data-scene="call-open">
+            <strong>正在招募</strong>
+            <span>说姓名、身份，继续确认条件</span>
+          </button>
+          <button class="route-node end" type="button" data-scene="call-closed">
+            <strong>不招募</strong>
+            <span>礼貌结束电话</span>
+          </button>
+          <button class="route-node" type="button" data-scene="manager-away">
+            <strong>店长不在</strong>
+            <span>留下电话，等回拨</span>
+          </button>
+          <button class="route-node" type="button" data-scene="schedule-check">
+            <strong>确认排班</strong>
+            <span>说明曜日、时间、28小时限制</span>
+          </button>
+          <button class="route-node" type="button" data-scene="book-interview">
+            <strong>约面试</strong>
+            <span>确认日期、时间、履历书</span>
+          </button>
+          <button class="route-node" type="button" data-scene="visit-store">
+            <strong>到店询问</strong>
+            <span>负责人在/不在两条线</span>
+          </button>
+          <button class="route-node" type="button" data-scene="interview-start">
+            <strong>面试当天</strong>
+            <span>进店、入座、递履历书</span>
+          </button>
+          <button class="route-node" type="button" data-scene="interview-main">
+            <strong>正式面试</strong>
+            <span>志望动机、排班、经验、日语</span>
+          </button>
+          <button class="route-node" type="button" data-scene="interview-end">
+            <strong>结束/结果</strong>
+            <span>之后通知或条件不合</span>
+          </button>
+        </div>
+        <div class="scene-panel" id="scene-panel" aria-live="polite">
+          <div class="scene-top">
+            <div>
+              <h3 id="scene-title">开始：打电话询问</h3>
+              <p id="scene-desc">确认是否还在招募，然后根据对方回答进入不同路线。</p>
+            </div>
+            <span class="scene-status" id="scene-status">电话</span>
+          </div>
+          <div class="scene-lines" id="scene-lines"></div>
+          <div class="scene-actions" id="scene-actions"></div>
+        </div>
+      </div>
+      <details class="legacy-flow">
+        <summary>完整文本版路线</summary>
+        <div class="details-body">
+      <div class="flow">
+        <article class="node">
+          <div class="node-title">
+            <h3>电话路线 1：打电话询问是否招聘</h3>
+            <span class="step-badge">1</span>
+          </div>
+          <div class="dialogue">
+            <div class="line staff">
+              <div class="speaker">店员</div>
+              <p class="jp">お<ruby>電話<rt>でんわ</rt></ruby>ありがとうございます。〇〇<ruby>店<rt>てん</rt></ruby>です。</p>
+              <p class="cn">您好，这里是〇〇店。</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp"><ruby>お忙<rt>いそが</rt></ruby>しいところ<ruby>失礼<rt>しつれい</rt></ruby>いたします。<ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>応募<rt>おうぼ</rt></ruby>についてお<ruby>電話<rt>でんわ</rt></ruby>いたしました。<ruby>現在<rt>げんざい</rt></ruby>、<ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>募集<rt>ぼしゅう</rt></ruby>はされていますでしょうか。</p>
+              <p class="cn">不好意思打扰了。我想咨询打工应聘。请问现在还在招人吗？</p>
+            </div>
+          </div>
+          <div class="branch-grid">
+            <div class="branch good">
+              <h4>分支 A：正在招募</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员</div>
+                  <p class="jp">はい、<ruby>現在<rt>げんざい</rt></ruby><ruby>募集<rt>ぼしゅう</rt></ruby>しています。お<ruby>名前<rt>なまえ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+                  <p class="cn">是的，现在正在招。请告诉我姓名。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">ありがとうございます。<ruby>九州大学<rt>きゅうしゅうだいがく</rt></ruby><ruby>大学院<rt>だいがくいん</rt></ruby>の<ruby>留学生<rt>りゅうがくせい</rt></ruby>で、<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。</p>
+                  <p class="cn">谢谢。我是九州大学大学院的留学生，姓李。</p>
+                </div>
+              </div>
+            </div>
+            <div class="branch end">
+              <h4>分支 B：已经不招</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员</div>
+                  <p class="jp"><ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。<ruby>現在<rt>げんざい</rt></ruby>は<ruby>募集<rt>ぼしゅう</rt></ruby>しておりません。</p>
+                  <p class="cn">不好意思，现在没有招聘。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">かしこまりました。<ruby>お忙<rt>いそが</rt></ruby>しいところ、ありがとうございました。<ruby>失礼<rt>しつれい</rt></ruby>いたします。</p>
+                  <p class="cn">明白了。感谢您百忙之中接电话。打扰了。</p>
+                </div>
+              </div>
+            </div>
+            <div class="branch">
+              <h4>分支 C：店长不在</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员</div>
+                  <p class="jp"><ruby>店長<rt>てんちょう</rt></ruby>が<ruby>今<rt>いま</rt></ruby><ruby>不在<rt>ふざい</rt></ruby>ですので、<ruby>折<rt>お</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しご<ruby>連絡<rt>れんらく</rt></ruby>します。</p>
+                  <p class="cn">店长现在不在，之后给你回电话。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">かしこまりました。<ruby>私<rt>わたし</rt></ruby>の<ruby>電話番号<rt>でんわばんごう</rt></ruby>は〇〇〇-〇〇〇〇-〇〇〇〇です。<ruby>本日<rt>ほんじつ</rt></ruby>ですと、〇<ruby>時以降<rt>じいこう</rt></ruby>は<ruby>電話<rt>でんわ</rt></ruby>に<ruby>出<rt>で</rt></ruby>られます。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+                  <p class="cn">明白了。我的电话是……今天几点以后可以接电话。麻烦您了。</p>
+                </div>
+              </div>
+            </div>
+            <div class="branch">
+              <h4>分支 D：听不清</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员</div>
+                  <p class="jp">すみません、少し早口で説明される。</p>
+                  <p class="cn">对方说得很快，你没听清。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">すみません、もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いできますでしょうか。<ruby>少<rt>すこ</rt></ruby>しゆっくり<ruby>話<rt>はな</rt></ruby>していただけますと<ruby>助<rt>たす</rt></ruby>かります。</p>
+                  <p class="cn">不好意思，可以再说一遍吗？如果能稍微慢一点说就太好了。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="node">
+          <div class="node-title">
+            <h3>电话路线 2：正在招募时，继续确认信息</h3>
+            <span class="step-badge">2</span>
+          </div>
+          <div class="dialogue">
+            <div class="line staff">
+              <div class="speaker">店员/店长</div>
+              <p class="jp"><ruby>週<rt>しゅう</rt></ruby>にどのくらい<ruby>入<rt>はい</rt></ruby>れますか。<ruby>働<rt>はたら</rt></ruby>ける<ruby>曜日<rt>ようび</rt></ruby>と<ruby>時間帯<rt>じかんたい</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。</p>
+              <p class="cn">每周大概能上几次？请告诉我能工作的星期和时间段。</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp"><ruby>平日<rt>へいじつ</rt></ruby>は<ruby>授業<rt>じゅぎょう</rt></ruby>がありますので、〇<ruby>曜日<rt>ようび</rt></ruby>と〇<ruby>曜日<rt>ようび</rt></ruby>の<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。<ruby>土日<rt>どにち</rt></ruby>は<ruby>比較的<rt>ひかくてき</rt></ruby><ruby>調整<rt>ちょうせい</rt></ruby>しやすいです。<ruby>留学生<rt>りゅうがくせい</rt></ruby>ですので、<ruby>週<rt>しゅう</rt></ruby>28<ruby>時間以内<rt>じかんいない</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>きたいです。</p>
+              <p class="cn">平日有课，所以星期几和星期几傍晚可以。周末相对容易调整。因为是留学生，希望在每周 28 小时以内工作。</p>
+            </div>
+          </div>
+          <div class="branch-grid">
+            <div class="branch good">
+              <h4>分支 A：约面试</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员/店长</div>
+                  <p class="jp">それでは、<ruby>面接<rt>めんせつ</rt></ruby>に<ruby>来<rt>き</rt></ruby>ていただきたいです。〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時<rt>じ</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。</p>
+                  <p class="cn">那么希望你来面试。几月几日几点可以吗？</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">はい、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時<rt>じ</rt></ruby>ですね。<ruby>当日<rt>とうじつ</rt></ruby>は<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>持参<rt>じさん</rt></ruby>いたします。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+                  <p class="cn">可以。是几月几日几点对吧？当天我会带简历过去。请多关照。</p>
+                </div>
+              </div>
+            </div>
+            <div class="branch">
+              <h4>分支 B：时间不合适</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员/店长</div>
+                  <p class="jp">〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時<rt>じ</rt></ruby>はどうですか。</p>
+                  <p class="cn">几月几日几点怎么样？</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp"><ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。その<ruby>時間<rt>じかん</rt></ruby>は<ruby>授業<rt>じゅぎょう</rt></ruby>があります。〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時以降<rt>じいこう</rt></ruby>でしたら<ruby>伺<rt>うかが</rt></ruby>えますが、いかがでしょうか。</p>
+                  <p class="cn">不好意思。那个时间我有课。几日几点以后可以过去，可以吗？</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="node">
+          <div class="node-title">
+            <h3>到店询问路线：直接去店里问</h3>
+            <span class="step-badge">3</span>
+          </div>
+          <div class="dialogue">
+            <div class="line staff">
+              <div class="speaker">店员</div>
+              <p class="jp">いらっしゃいませ。</p>
+              <p class="cn">欢迎光临。</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp">すみません。<ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>応募<rt>おうぼ</rt></ruby>について<ruby>伺<rt>うかが</rt></ruby>いたいのですが、<ruby>担当<rt>たんとう</rt></ruby>の<ruby>方<rt>かた</rt></ruby>はいらっしゃいますでしょうか。</p>
+              <p class="cn">不好意思。我想咨询打工应聘，请问负责人在吗？</p>
+            </div>
+          </div>
+          <div class="branch-grid">
+            <div class="branch good">
+              <h4>分支 A：负责人在</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员</div>
+                  <p class="jp"><ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。<ruby>担当者<rt>たんとうしゃ</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>んできます。</p>
+                  <p class="cn">请稍等，我去叫负责人。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">はい、ありがとうございます。</p>
+                  <p class="cn">好的，谢谢。</p>
+                </div>
+                <div class="line staff">
+                  <div class="speaker">负责人</div>
+                  <p class="jp">お<ruby>待<rt>ま</rt></ruby>たせしました。<ruby>応募<rt>おうぼ</rt></ruby>の<ruby>件<rt>けん</rt></ruby>ですね。お<ruby>名前<rt>なまえ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+                  <p class="cn">久等了。是应聘的事情对吧？请告诉我姓名。</p>
+                </div>
+              </div>
+            </div>
+            <div class="branch">
+              <h4>分支 B：负责人不在</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">店员</div>
+                  <p class="jp"><ruby>担当者<rt>たんとうしゃ</rt></ruby>が<ruby>今<rt>いま</rt></ruby>いないので、<ruby>後<rt>あと</rt></ruby>でご<ruby>連絡<rt>れんらく</rt></ruby>します。</p>
+                  <p class="cn">负责人现在不在，之后联系你。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">かしこまりました。<ruby>連絡先<rt>れんらくさき</rt></ruby>をお<ruby>伝<rt>つた</rt></ruby>えしてもよろしいでしょうか。<ruby>電話番号<rt>でんわばんごう</rt></ruby>は〇〇〇-〇〇〇〇-〇〇〇〇です。</p>
+                  <p class="cn">明白了。我可以留下联系方式吗？电话是……</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="node">
+          <div class="node-title">
+            <h3>面试当天：从进店到坐下</h3>
+            <span class="step-badge">4</span>
+          </div>
+          <div class="dialogue">
+            <div class="line staff">
+              <div class="speaker">店员</div>
+              <p class="jp">いらっしゃいませ。<ruby>本日<rt>ほんじつ</rt></ruby>はどうされましたか。</p>
+              <p class="cn">欢迎光临。今天有什么事吗？</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp">こんにちは。<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<ruby>本日<rt>ほんじつ</rt></ruby>〇<ruby>時<rt>じ</rt></ruby>に<ruby>アルバイト<rt>あるばいと</rt></ruby><ruby>面接<rt>めんせつ</rt></ruby>の<ruby>予約<rt>よやく</rt></ruby>をしております。<ruby>担当<rt>たんとう</rt></ruby>の<ruby>方<rt>かた</rt></ruby>はいらっしゃいますでしょうか。</p>
+              <p class="cn">您好，我姓李。我预约了今天几点的打工面试，请问负责人在吗？</p>
+            </div>
+            <div class="line staff">
+              <div class="speaker">店员/负责人</div>
+              <p class="jp">はい、<ruby>面接<rt>めんせつ</rt></ruby>ですね。こちらへどうぞ。お<ruby>掛<rt>か</rt></ruby>けください。</p>
+              <p class="cn">好的，是面试对吧。请到这边。请坐。</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp"><ruby>失礼<rt>しつれい</rt></ruby>いたします。ありがとうございます。</p>
+              <p class="cn">打扰了。谢谢。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="node">
+          <div class="node-title">
+            <h3>正式面试：一问一答主线</h3>
+            <span class="step-badge">5</span>
+          </div>
+          <div class="dialogue">
+            <div class="line staff">
+              <div class="speaker">面试官</div>
+              <p class="jp"><ruby>履歴書<rt>りれきしょ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+              <p class="cn">请给我简历。</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp">こちらが<ruby>履歴書<rt>りれきしょ</rt></ruby>です。ご<ruby>確認<rt>かくにん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+              <p class="cn">这是我的简历，麻烦您确认。</p>
+            </div>
+            <div class="line staff">
+              <div class="speaker">面试官</div>
+              <p class="jp"><ruby>簡単<rt>かんたん</rt></ruby>に<ruby>自己紹介<rt>じこしょうかい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+              <p class="cn">请简单自我介绍。</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp"><ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<ruby>現在<rt>げんざい</rt></ruby>、<ruby>九州大学<rt>きゅうしゅうだいがく</rt></ruby><ruby>大学院<rt>だいがくいん</rt></ruby><ruby>システム情報科学府<rt>しすてむじょうほうかがくふ</rt></ruby>の<ruby>情報理工学専攻<rt>じょうほうりこうがくせんこう</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>しています。<ruby>日本語<rt>にほんご</rt></ruby>はN2を<ruby>持<rt>も</rt></ruby>っていて、<ruby>現在<rt>げんざい</rt></ruby>N1の<ruby>勉強<rt>べんきょう</rt></ruby>をしています。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+              <p class="cn">我是李。现在在九州大学大学院系统情报科学府情报理工学专攻学习。日语有 N2，现在正在备考 N1。请多关照。</p>
+            </div>
+            <div class="line staff">
+              <div class="speaker">面试官</div>
+              <p class="jp"><ruby>応募<rt>おうぼ</rt></ruby>した<ruby>理由<rt>りゆう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。</p>
+              <p class="cn">请告诉我应聘理由。</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>をもっと<ruby>上達<rt>じょうたつ</rt></ruby>させたいことと、<ruby>日本<rt>にほん</rt></ruby>の<ruby>接客<rt>せっきゃく</rt></ruby>マナーを<ruby>学<rt>まな</rt></ruby>びたいことが<ruby>応募理由<rt>おうぼりゆう</rt></ruby>です。こちらのお<ruby>店<rt>みせ</rt></ruby>はよく<ruby>利用<rt>りよう</rt></ruby>していて、<ruby>店員<rt>てんいん</rt></ruby>さんの<ruby>対応<rt>たいおう</rt></ruby>が<ruby>丁寧<rt>ていねい</rt></ruby>だと<ruby>感<rt>かん</rt></ruby>じました。</p>
+              <p class="cn">想提高日语，也想学习日本接客礼仪。我经常使用这家店，觉得店员应对很礼貌。</p>
+            </div>
+            <div class="line staff">
+              <div class="speaker">面试官</div>
+              <p class="jp"><ruby>週<rt>しゅう</rt></ruby>に<ruby>何回<rt>なんかい</rt></ruby><ruby>入<rt>はい</rt></ruby>れますか。どの<ruby>時間帯<rt>じかんたい</rt></ruby>に<ruby>働<rt>はたら</rt></ruby>けますか。</p>
+              <p class="cn">每周能上几次？哪个时间段可以工作？</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp"><ruby>平日<rt>へいじつ</rt></ruby>は<ruby>授業<rt>じゅぎょう</rt></ruby>がありますので、〇<ruby>曜日<rt>ようび</rt></ruby>と〇<ruby>曜日<rt>ようび</rt></ruby>の<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。<ruby>土日<rt>どにち</rt></ruby>は<ruby>比較的<rt>ひかくてき</rt></ruby><ruby>調整<rt>ちょうせい</rt></ruby>しやすいです。</p>
+              <p class="cn">平日有课，所以星期几和星期几傍晚可以。周末相对容易调整。</p>
+            </div>
+            <div class="line staff">
+              <div class="speaker">面试官</div>
+              <p class="jp">コンビニで<ruby>働<rt>はたら</rt></ruby>いた<ruby>経験<rt>けいけん</rt></ruby>はありますか。</p>
+              <p class="cn">有在便利店工作的经验吗？</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp">コンビニでの<ruby>アルバイト経験<rt>あるばいとけいけん</rt></ruby>はありません。ただ、メモを<ruby>取<rt>と</rt></ruby>りながらまじめに<ruby>勉強<rt>べんきょう</rt></ruby>します。<ruby>分<rt>わ</rt></ruby>からないことは<ruby>必<rt>かなら</rt></ruby>ず<ruby>確認<rt>かくにん</rt></ruby>してから<ruby>行動<rt>こうどう</rt></ruby>します。</p>
+              <p class="cn">没有便利店经验。但我会认真记笔记学习，不懂的事情一定确认后再行动。</p>
+            </div>
+            <div class="line staff">
+              <div class="speaker">面试官</div>
+              <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>での<ruby>接客<rt>せっきゃく</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。</p>
+              <p class="cn">用日语接客没问题吗？</p>
+            </div>
+            <div class="line me">
+              <div class="speaker">你</div>
+              <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>はN2を<ruby>持<rt>も</rt></ruby>っていて、<ruby>現在<rt>げんざい</rt></ruby>N1の<ruby>勉強<rt>べんきょう</rt></ruby>をしています。<ruby>日常会話<rt>にちじょうかいわ</rt></ruby>はできますが、<ruby>分<rt>わ</rt></ruby>からない<ruby>言葉<rt>ことば</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>必<rt>かなら</rt></ruby>ず<ruby>確認<rt>かくにん</rt></ruby>します。</p>
+              <p class="cn">日语有 N2，现在正在备考 N1。日常会话可以，但有不懂的词会一定确认。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="node">
+          <div class="node-title">
+            <h3>面试结束：结果怎么说</h3>
+            <span class="step-badge">6</span>
+          </div>
+          <div class="branch-grid">
+            <div class="branch good">
+              <h4>分支 A：之后通知结果</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">面试官</div>
+                  <p class="jp"><ruby>結果<rt>けっか</rt></ruby>は<ruby>後日<rt>ごじつ</rt></ruby>ご<ruby>連絡<rt>れんらく</rt></ruby>します。<ruby>本日<rt>ほんじつ</rt></ruby>はありがとうございました。</p>
+                  <p class="cn">结果之后联系你。今天谢谢你。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp"><ruby>本日<rt>ほんじつ</rt></ruby>はお<ruby>時間<rt>じかん</rt></ruby>をいただき、ありがとうございました。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。<ruby>失礼<rt>しつれい</rt></ruby>いたします。</p>
+                  <p class="cn">今天感谢您抽时间。请多关照。告辞了。</p>
+                </div>
+              </div>
+            </div>
+            <div class="branch end">
+              <h4>分支 B：当场说条件不合</h4>
+              <div class="dialogue">
+                <div class="line staff">
+                  <div class="speaker">面试官</div>
+                  <p class="jp"><ruby>今回<rt>こんかい</rt></ruby>は<ruby>希望<rt>きぼう</rt></ruby>の<ruby>時間帯<rt>じかんたい</rt></ruby>が<ruby>合<rt>あ</rt></ruby>わないため、<ruby>採用<rt>さいよう</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しいです。</p>
+                  <p class="cn">这次因为希望时间段不合，录用比较困难。</p>
+                </div>
+                <div class="line me">
+                  <div class="speaker">你</div>
+                  <p class="jp">かしこまりました。<ruby>本日<rt>ほんじつ</rt></ruby>はお<ruby>時間<rt>じかん</rt></ruby>をいただき、ありがとうございました。<ruby>失礼<rt>しつれい</rt></ruby>いたします。</p>
+                  <p class="cn">明白了。今天感谢您抽时间。告辞了。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="phone">
+      <div class="section-head">
+        <h2>电话応募</h2>
+        <span class="tag">主要方式</span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>开场第一句</h3>
+          <div class="turn staff">
+            <p class="speaker-label">对方可能说</p>
+            <p class="jp">お<ruby>電話<rt>でんわ</rt></ruby>ありがとうございます。〇〇<ruby>店<rt>てん</rt></ruby>です。</p>
+            <p class="cn">您好，这里是〇〇店。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp"><ruby>お忙<rt>いそが</rt></ruby>しいところ<ruby>失礼<rt>しつれい</rt></ruby>いたします。<br><ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>応募<rt>おうぼ</rt></ruby>についてお<ruby>電話<rt>でんわ</rt></ruby>いたしました。<br><ruby>現在<rt>げんざい</rt></ruby>、<ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>募集<rt>ぼしゅう</rt></ruby>はされていますでしょうか。</p>
+          <p class="cn">不好意思打扰了。我想咨询打工应聘。请问现在还在招人吗？</p>
+          </div>
+        </article>
+        <article class="card">
+          <h3>介绍自己</h3>
+          <div class="turn staff">
+            <p class="speaker-label">对方可能问</p>
+            <p class="jp">お<ruby>名前<rt>なまえ</rt></ruby>とご<ruby>連絡先<rt>れんらくさき</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。<br>どちらの<ruby>方<rt>かた</rt></ruby>ですか。</p>
+            <p class="cn">请告诉我姓名和联系方式。你是哪位？</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp"><ruby>私<rt>わたし</rt></ruby>は<ruby>九州大学<rt>きゅうしゅうだいがく</rt></ruby><ruby>大学院<rt>だいがくいん</rt></ruby>の<ruby>留学生<rt>りゅうがくせい</rt></ruby>で、<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<br>コンビニの<ruby>アルバイト<rt>あるばいと</rt></ruby>に<ruby>応募<rt>おうぼ</rt></ruby>したいと<ruby>思<rt>おも</rt></ruby>い、お<ruby>電話<rt>でんわ</rt></ruby>しました。</p>
+          <p class="cn">我是九州大学大学院的留学生，姓李。想应聘便利店打工，所以打电话过来。</p>
+          </div>
+        </article>
+      </div>
+
+      <details open>
+        <summary>如果店长不在</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">对方可能说</p>
+            <p class="jp"><ruby>店長<rt>てんちょう</rt></ruby>が<ruby>不在<rt>ふざい</rt></ruby>ですので、<ruby>折<rt>お</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しご<ruby>連絡<rt>れんらく</rt></ruby>します。</p>
+            <p class="cn">店长现在不在，之后会给你回电话。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp">かしこまりました。<br><ruby>私<rt>わたし</rt></ruby>の<ruby>電話番号<rt>でんわばんごう</rt></ruby>は、〇〇〇-〇〇〇〇-〇〇〇〇です。<br><ruby>本日<rt>ほんじつ</rt></ruby>ですと、〇<ruby>時以降<rt>じいこう</rt></ruby>は<ruby>電話<rt>でんわ</rt></ruby>に<ruby>出<rt>で</rt></ruby>られます。<br>よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+          <p class="cn">明白了。我的电话是……今天的话，几点以后可以接电话。麻烦您了。</p>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>如果对方约面试</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">对方可能说</p>
+            <p class="jp">それでは、〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時<rt>じ</rt></ruby>に<ruby>面接<rt>めんせつ</rt></ruby>に<ruby>来<rt>き</rt></ruby>てください。</p>
+            <p class="cn">那请你几月几日几点来面试。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp">ありがとうございます。<br>〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>、〇<ruby>時<rt>じ</rt></ruby>ですね。<br><ruby>当日<rt>とうじつ</rt></ruby>は<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>持参<rt>じさん</rt></ruby>いたします。<br>よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+          <p class="cn">谢谢。是几月几日几点对吧？当天我会带简历过去。请多关照。</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="visit">
+      <div class="section-head">
+        <h2>到店询问</h2>
+        <span class="tag">更容易看表情</span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>找负责人</h3>
+          <div class="turn staff">
+            <p class="speaker-label">店员可能说</p>
+            <p class="jp">いらっしゃいませ。</p>
+            <p class="cn">欢迎光临。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样询问</p>
+          <p class="jp">すみません。<br><ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>応募<rt>おうぼ</rt></ruby>について<ruby>伺<rt>うかが</rt></ruby>いたいのですが、<br><ruby>担当<rt>たんとう</rt></ruby>の<ruby>方<rt>かた</rt></ruby>はいらっしゃいますでしょうか。</p>
+          <p class="cn">不好意思。我想咨询打工应聘，请问负责人在吗？</p>
+          </div>
+        </article>
+        <article class="card">
+          <h3>店长不在时</h3>
+          <div class="turn staff">
+            <p class="speaker-label">店员可能说</p>
+            <p class="jp"><ruby>担当者<rt>たんとうしゃ</rt></ruby>が<ruby>今<rt>いま</rt></ruby>いないので、<ruby>後<rt>あと</rt></ruby>でご<ruby>連絡<rt>れんらく</rt></ruby>します。</p>
+            <p class="cn">负责人现在不在，之后联系你。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp">かしこまりました。<br>もしよろしければ、<ruby>連絡先<rt>れんらくさき</rt></ruby>をお<ruby>伝<rt>つた</rt></ruby>えしてもよろしいでしょうか。</p>
+          <p class="cn">明白了。如果可以的话，我能留下联系方式吗？</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="interview">
+      <div class="section-head">
+        <h2>正式面试流程</h2>
+        <span class="tag">提前 5 分钟到</span>
+      </div>
+      <details open>
+        <summary>进店找人</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">店员可能问</p>
+            <p class="jp"><ruby>本日<rt>ほんじつ</rt></ruby>はどうされましたか。</p>
+            <p class="cn">今天有什么事吗？</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp">こんにちは。<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<br><ruby>本日<rt>ほんじつ</rt></ruby>〇<ruby>時<rt>じ</rt></ruby>に<ruby>アルバイト<rt>あるばいと</rt></ruby><ruby>面接<rt>めんせつ</rt></ruby>の<ruby>予約<rt>よやく</rt></ruby>をしております。<br><ruby>担当<rt>たんとう</rt></ruby>の<ruby>方<rt>かた</rt></ruby>はいらっしゃいますでしょうか。</p>
+          <p class="cn">您好，我姓李。我预约了今天几点的打工面试，请问负责人在吗？</p>
+          </div>
+        </div>
+      </details>
+      <details>
+        <summary>进入面试房间</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">对方可能说</p>
+            <p class="jp">こちらへどうぞ。<br>お<ruby>掛<rt>か</rt></ruby>けください。</p>
+            <p class="cn">请到这边。请坐。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp"><ruby>失礼<rt>しつれい</rt></ruby>いたします。</p>
+          <p class="jp"><ruby>座<rt>すわ</rt></ruby>ってもよろしいでしょうか。</p>
+          <p class="cn">打扰了。请问可以坐下吗？</p>
+          </div>
+        </div>
+      </details>
+      <details>
+        <summary>递履历书</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">对方可能说</p>
+            <p class="jp"><ruby>履歴書<rt>りれきしょ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+            <p class="cn">请给我简历。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp">こちらが<ruby>履歴書<rt>りれきしょ</rt></ruby>です。<br>ご<ruby>確認<rt>かくにん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+          <p class="cn">这是我的简历，麻烦您确认。</p>
+          </div>
+        </div>
+      </details>
+      <details>
+        <summary>自我介绍</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">对方可能问</p>
+            <p class="jp"><ruby>簡単<rt>かんたん</rt></ruby>に<ruby>自己紹介<rt>じこしょうかい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+            <p class="cn">请简单自我介绍。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp"><ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<br><ruby>現在<rt>げんざい</rt></ruby>、<ruby>九州大学<rt>きゅうしゅうだいがく</rt></ruby><ruby>大学院<rt>だいがくいん</rt></ruby><ruby>システム情報科学府<rt>しすてむじょうほうかがくふ</rt></ruby>の<ruby>情報理工学専攻<rt>じょうほうりこうがくせんこう</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>しています。<br><ruby>中国<rt>ちゅうごく</rt></ruby>では<ruby>東華大学<rt>とうかだいがく</rt></ruby>で<ruby>社会学<rt>しゃかいがく</rt></ruby>を<ruby>専攻<rt>せんこう</rt></ruby>していました。<br><br><ruby>日本語<rt>にほんご</rt></ruby>はN2を<ruby>持<rt>も</rt></ruby>っていて、<ruby>現在<rt>げんざい</rt></ruby>N1の<ruby>勉強<rt>べんきょう</rt></ruby>をしています。<br><ruby>接客<rt>せっきゃく</rt></ruby>を<ruby>通<rt>とお</rt></ruby>してもっと<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>上達<rt>じょうたつ</rt></ruby>させたいと<ruby>思<rt>おも</rt></ruby>っています。<br>まじめに<ruby>仕事<rt>しごと</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えて、<ruby>時間<rt>じかん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>って<ruby>働<rt>はたら</rt></ruby>きたいです。<br>どうぞよろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。</p>
+          <p class="cn">我是李。现在在九州大学大学院系统情报科学府情报理工学专攻学习。本科在中国东华大学学社会学。日语有 N2，现在正在备考 N1。希望通过接客进一步提高日语。我会认真学习工作、守时上班。</p>
+          </div>
+        </div>
+      </details>
+      <details>
+        <summary>离开时</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">对方可能说</p>
+            <p class="jp"><ruby>本日<rt>ほんじつ</rt></ruby>はこれで<ruby>以上<rt>いじょう</rt></ruby>です。<br><ruby>結果<rt>けっか</rt></ruby>は<ruby>後日<rt>ごじつ</rt></ruby>ご<ruby>連絡<rt>れんらく</rt></ruby>します。</p>
+            <p class="cn">今天就到这里。结果之后联系你。</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你这样回答</p>
+          <p class="jp"><ruby>本日<rt>ほんじつ</rt></ruby>はお<ruby>時間<rt>じかん</rt></ruby>をいただき、ありがとうございました。<br>よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。<br><ruby>失礼<rt>しつれい</rt></ruby>いたします。</p>
+          <p class="cn">今天感谢您抽时间。请多关照。告辞了。</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="answers">
+      <div class="section-head">
+        <h2>常见问题回答</h2>
+        <span class="tag">背这几段最划算</span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>为什么想来我们店？</h3>
+          <div class="question">
+            <p class="question-label">面试官可能这样问</p>
+            <p class="jp"><ruby>応募<rt>おうぼ</rt></ruby>した<ruby>理由<rt>りゆう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。<br><ruby>志望動機<rt>しぼうどうき</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。</p>
+          </div>
+          <p class="answer-label">你的回答</p>
+          <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>をもっと<ruby>上達<rt>じょうたつ</rt></ruby>させたいことと、<ruby>日本<rt>にほん</rt></ruby>の<ruby>接客<rt>せっきゃく</rt></ruby>マナーを<ruby>学<rt>まな</rt></ruby>びたいことが<ruby>応募理由<rt>おうぼりゆう</rt></ruby>です。<br>こちらのお<ruby>店<rt>みせ</rt></ruby>はよく<ruby>利用<rt>りよう</rt></ruby>していて、<ruby>店員<rt>てんいん</rt></ruby>さんの<ruby>対応<rt>たいおう</rt></ruby>が<ruby>丁寧<rt>ていねい</rt></ruby>だと<ruby>感<rt>かん</rt></ruby>じました。<br><ruby>私<rt>わたし</rt></ruby>もそのように<ruby>働<rt>はたら</rt></ruby>けるようになりたいです。</p>
+          <p class="cn">想提高日语，也想学习日本的接客礼仪。我经常使用这家店，觉得店员应对很礼貌，我也想那样工作。</p>
+        </article>
+        <article class="card">
+          <h3>什么时候可以上班？</h3>
+          <div class="question">
+            <p class="question-label">面试官可能这样问</p>
+            <p class="jp"><ruby>週<rt>しゅう</rt></ruby>に<ruby>何回<rt>なんかい</rt></ruby><ruby>入<rt>はい</rt></ruby>れますか。<br>どの<ruby>時間帯<rt>じかんたい</rt></ruby>に<ruby>働<rt>はたら</rt></ruby>けますか。<br><ruby>土日<rt>どにち</rt></ruby>は<ruby>入<rt>はい</rt></ruby>れますか。</p>
+          </div>
+          <p class="answer-label">你的回答</p>
+          <p class="jp"><ruby>平日<rt>へいじつ</rt></ruby>は<ruby>授業<rt>じゅぎょう</rt></ruby>がありますので、〇<ruby>曜日<rt>ようび</rt></ruby>と〇<ruby>曜日<rt>ようび</rt></ruby>の<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。<br><ruby>土日<rt>どにち</rt></ruby>は<ruby>比較的<rt>ひかくてき</rt></ruby><ruby>調整<rt>ちょうせい</rt></ruby>しやすいです。<br><ruby>留学生<rt>りゅうがくせい</rt></ruby>ですので、<ruby>週<rt>しゅう</rt></ruby>28<ruby>時間以内<rt>じかんいない</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>きたいです。</p>
+          <p class="cn">平日有课，所以星期几和星期几傍晚可以。周末相对容易调整。因为是留学生，希望在每周 28 小时以内工作。</p>
+        </article>
+        <article class="card">
+          <h3>有经验吗？</h3>
+          <div class="question">
+            <p class="question-label">面试官可能这样问</p>
+            <p class="jp">コンビニで<ruby>働<rt>はたら</rt></ruby>いた<ruby>経験<rt>けいけん</rt></ruby>はありますか。<br><ruby>接客<rt>せっきゃく</rt></ruby>の<ruby>経験<rt>けいけん</rt></ruby>はありますか。</p>
+          </div>
+          <p class="answer-label">你的回答</p>
+          <p class="jp">コンビニでの<ruby>アルバイト経験<rt>あるばいとけいけん</rt></ruby>はありません。<br>ただ、<ruby>仕事<rt>しごと</rt></ruby>を<ruby>早<rt>はや</rt></ruby>く<ruby>覚<rt>おぼ</rt></ruby>えられるように、メモを<ruby>取<rt>と</rt></ruby>りながらまじめに<ruby>勉強<rt>べんきょう</rt></ruby>します。<br><ruby>分<rt>わ</rt></ruby>からないことは<ruby>必<rt>かなら</rt></ruby>ず<ruby>確認<rt>かくにん</rt></ruby>してから<ruby>行動<rt>こうどう</rt></ruby>します。</p>
+          <p class="cn">没有便利店经验。但我会边记笔记边认真学习，尽快记住工作。不懂的事情一定先确认再行动。</p>
+        </article>
+        <article class="card">
+          <h3>日语没问题吗？</h3>
+          <div class="question">
+            <p class="question-label">面试官可能这样问</p>
+            <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>はどのくらいできますか。<br><ruby>日本語<rt>にほんご</rt></ruby>での<ruby>接客<rt>せっきゃく</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。</p>
+          </div>
+          <p class="answer-label">你的回答</p>
+          <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>はN2を<ruby>持<rt>も</rt></ruby>っていて、<ruby>現在<rt>げんざい</rt></ruby>N1の<ruby>勉強<rt>べんきょう</rt></ruby>をしています。<br><ruby>日常会話<rt>にちじょうかいわ</rt></ruby>はできますが、<ruby>分<rt>わ</rt></ruby>からない<ruby>言葉<rt>ことば</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>必<rt>かなら</rt></ruby>ず<ruby>確認<rt>かくにん</rt></ruby>します。<br><ruby>接客<rt>せっきゃく</rt></ruby>を<ruby>通<rt>とお</rt></ruby>して、もっと<ruby>上達<rt>じょうたつ</rt></ruby>したいと<ruby>思<rt>おも</rt></ruby>っています。</p>
+          <p class="cn">日语有 N2，现在正在备考 N1。日常会话可以，但有不懂的词时一定会确认。希望通过接客进一步提高。</p>
+        </article>
+        <article class="card">
+          <h3>长期能做吗？</h3>
+          <div class="question">
+            <p class="question-label">面试官可能这样问</p>
+            <p class="jp"><ruby>長期<rt>ちょうき</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>けますか。<br><ruby>家<rt>いえ</rt></ruby>からここまでどのくらいかかりますか。</p>
+          </div>
+          <p class="answer-label">你的回答</p>
+          <p class="jp"><ruby>今後<rt>こんご</rt></ruby>、<ruby>福岡市内<rt>ふくおかしない</rt></ruby>に<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す<ruby>予定<rt>よてい</rt></ruby>がありますが、<ruby>通勤<rt>つうきん</rt></ruby>できる<ruby>範囲<rt>はんい</rt></ruby>であれば、<ruby>長<rt>なが</rt></ruby>く<ruby>働<rt>はたら</rt></ruby>きたいと<ruby>考<rt>かんが</rt></ruby>えています。</p>
+          <p class="cn">之后计划搬到福冈市内，如果在能通勤的范围内，希望长期工作。</p>
+        </article>
+        <article class="card">
+          <h3>你的优点？</h3>
+          <div class="question">
+            <p class="question-label">面试官可能这样问</p>
+            <p class="jp"><ruby>長所<rt>ちょうしょ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。<br><ruby>自己PR<rt>じこぴーあーる</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+          </div>
+          <p class="answer-label">你的回答</p>
+          <p class="jp"><ruby>私<rt>わたし</rt></ruby>の<ruby>長所<rt>ちょうしょ</rt></ruby>は、まじめで<ruby>時間<rt>じかん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>るところです。<br>また、<ruby>分<rt>わ</rt></ruby>からないことをそのままにせず、<ruby>確認<rt>かくにん</rt></ruby>してから<ruby>行動<rt>こうどう</rt></ruby>するようにしています。</p>
+          <p class="cn">我的优点是认真、守时。不懂的事情不会放着不管，会确认后再行动。</p>
+        </article>
+      </div>
+
+      <details>
+        <summary>商品夸夸句</summary>
+        <div class="details-body">
+          <div class="turn staff">
+            <p class="speaker-label">对方可能问</p>
+            <p class="jp">こちらのお<ruby>店<rt>みせ</rt></ruby>はよく<ruby>利用<rt>りよう</rt></ruby>しますか。<br><ruby>好<rt>す</rt></ruby>きな<ruby>商品<rt>しょうひん</rt></ruby>はありますか。</p>
+            <p class="cn">你经常来这家店吗？有喜欢的商品吗？</p>
+          </div>
+          <div class="turn">
+            <p class="speaker-label">你可以这样回答</p>
+          <p class="jp">セブンイレブンのおにぎりやセブンカフェをよく<ruby>買<rt>か</rt></ruby>っています。<ruby>品質<rt>ひんしつ</rt></ruby>が<ruby>安定<rt>あんてい</rt></ruby>していて、とても<ruby>便利<rt>べんり</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>います。</p>
+          <p class="jp">ファミリーマートのファミチキが<ruby>好<rt>す</rt></ruby>きで、よく<ruby>利用<rt>りよう</rt></ruby>しています。</p>
+          <p class="jp">ローソンのからあげクンやスイーツをよく<ruby>買<rt>か</rt></ruby>っています。<ruby>商品<rt>しょうひん</rt></ruby>が<ruby>魅力的<rt>みりょくてき</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>います。</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="questions">
+      <div class="section-head">
+        <h2>问题速查</h2>
+        <span class="tag">备用清单</span>
+      </div>
+      <div class="grid">
+        <article class="card compact">
+          <h3>请自我介绍</h3>
+          <p class="jp"><ruby>簡単<rt>かんたん</rt></ruby>に<ruby>自己紹介<rt>じこしょうかい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。</p>
+          <p class="jp"><ruby>自己紹介<rt>じこしょうかい</rt></ruby>をしていただけますか。</p>
+          <p class="cn">听到「自己紹介」就开始你的自我介绍。</p>
+        </article>
+        <article class="card compact">
+          <h3>为什么応募？</h3>
+          <p class="jp"><ruby>応募<rt>おうぼ</rt></ruby>した<ruby>理由<rt>りゆう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。</p>
+          <p class="jp"><ruby>志望動機<rt>しぼうどうき</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。</p>
+          <p class="cn">听到「理由」「志望動機」就说想提高日语、学习接客、常来这家店。</p>
+        </article>
+        <article class="card compact">
+          <h3>能上哪些班？</h3>
+          <p class="jp"><ruby>週<rt>しゅう</rt></ruby>に<ruby>何回<rt>なんかい</rt></ruby><ruby>入<rt>はい</rt></ruby>れますか。</p>
+          <p class="jp">どの<ruby>時間帯<rt>じかんたい</rt></ruby>に<ruby>働<rt>はたら</rt></ruby>けますか。</p>
+          <p class="jp"><ruby>土日<rt>どにち</rt></ruby>は<ruby>入<rt>はい</rt></ruby>れますか。</p>
+          <p class="cn">听到「週」「時間帯」「土日」就回答你可工作的曜日和时间。</p>
+        </article>
+        <article class="card compact">
+          <h3>经验问题</h3>
+          <p class="jp">コンビニで<ruby>働<rt>はたら</rt></ruby>いた<ruby>経験<rt>けいけん</rt></ruby>はありますか。</p>
+          <p class="jp"><ruby>接客<rt>せっきゃく</rt></ruby>の<ruby>経験<rt>けいけん</rt></ruby>はありますか。</p>
+          <p class="cn">听到「経験」就说没有便利店经验，但会记笔记、确认后行动。</p>
+        </article>
+        <article class="card compact">
+          <h3>日语问题</h3>
+          <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>はどのくらいできますか。</p>
+          <p class="jp"><ruby>日本語<rt>にほんご</rt></ruby>での<ruby>接客<rt>せっきゃく</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。</p>
+          <p class="cn">听到「日本語」「接客」就回答 N2、备考 N1、不懂会确认。</p>
+        </article>
+        <article class="card compact">
+          <h3>通勤和长期性</h3>
+          <p class="jp"><ruby>家<rt>いえ</rt></ruby>からここまでどのくらいかかりますか。</p>
+          <p class="jp"><ruby>長期<rt>ちょうき</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>けますか。</p>
+          <p class="cn">听到「家」「通勤」「長期」就说明搬家计划和能长期工作的意愿。</p>
+        </article>
+        <article class="card compact">
+          <h3>什么时候开始？</h3>
+          <p class="jp">いつから<ruby>働<rt>はたら</rt></ruby>けますか。</p>
+          <p class="jp"><ruby>勤務開始日<rt>きんむかいしび</rt></ruby>はいつが<ruby>希望<rt>きぼう</rt></ruby>ですか。</p>
+          <p class="cn">听到「いつから」「勤務開始日」就回答可开始日期。</p>
+        </article>
+        <article class="card compact">
+          <h3>有什么问题吗？</h3>
+          <p class="jp"><ruby>何<rt>なに</rt></ruby>か<ruby>質問<rt>しつもん</rt></ruby>はありますか。</p>
+          <p class="jp"><ruby>確認<rt>かくにん</rt></ruby>したいことはありますか。</p>
+          <p class="cn">可以问：研修、最初的时间带、シフト多久决定一次。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="rescue">
+      <div class="section-head">
+        <h2>听不懂救场</h2>
+        <span class="tag">面试保命三连</span>
+      </div>
+      <div class="grid">
+        <article class="card compact">
+          <h3>请再说一遍</h3>
+          <p class="jp">すみません、もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いできますか。</p>
+          <p class="cn">不好意思，可以再说一遍吗？</p>
+        </article>
+        <article class="card compact">
+          <h3>请慢一点</h3>
+          <p class="jp">すみません、<ruby>少<rt>すこ</rt></ruby>しゆっくり<ruby>話<rt>はな</rt></ruby>していただけますか。</p>
+          <p class="cn">不好意思，可以稍微慢一点说吗？</p>
+        </article>
+        <article class="card compact">
+          <h3>确认理解</h3>
+          <p class="jp"><ruby>確認<rt>かくにん</rt></ruby>してもよろしいでしょうか。<br>つまり、〇〇ということでしょうか。</p>
+          <p class="cn">我可以确认一下吗？也就是说，是〇〇的意思对吗？</p>
+        </article>
+        <article class="card compact">
+          <h3>确认排班</h3>
+          <p class="jp"><ruby>確認<rt>かくにん</rt></ruby>してもよろしいでしょうか。<br><ruby>週<rt>しゅう</rt></ruby>2<ruby>回<rt>かい</rt></ruby>で、<ruby>夕方<rt>ゆうがた</rt></ruby>のシフトということでしょうか。</p>
+          <p class="cn">我确认一下，是每周 2 次、傍晚班的意思吗？</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="words">
+      <div class="section-head">
+        <h2>关键词速查</h2>
+        <span class="tag">先听懂方向</span>
+      </div>
+      <div class="word-list">
+        <div class="word"><p class="jp"><ruby>応募<rt>おうぼ</rt></ruby></p><span class="small">应聘</span></div>
+        <div class="word"><p class="jp"><ruby>面接<rt>めんせつ</rt></ruby></p><span class="small">面试</span></div>
+        <div class="word"><p class="jp"><ruby>履歴書<rt>りれきしょ</rt></ruby></p><span class="small">简历</span></div>
+        <div class="word"><p class="jp"><ruby>担当者<rt>たんとうしゃ</rt></ruby></p><span class="small">负责人</span></div>
+        <div class="word"><p class="jp"><ruby>店長<rt>てんちょう</rt></ruby></p><span class="small">店长</span></div>
+        <div class="word"><p class="jp"><ruby>募集<rt>ぼしゅう</rt></ruby></p><span class="small">招聘</span></div>
+        <div class="word"><p class="jp"><ruby>未経験<rt>みけいけん</rt></ruby></p><span class="small">无经验</span></div>
+        <div class="word"><p class="jp"><ruby>経験<rt>けいけん</rt></ruby></p><span class="small">经验</span></div>
+        <div class="word"><p class="jp"><ruby>志望動機<rt>しぼうどうき</rt></ruby></p><span class="small">志愿理由</span></div>
+        <div class="word"><p class="jp">シフト</p><span class="small">排班</span></div>
+        <div class="word"><p class="jp"><ruby>時間帯<rt>じかんたい</rt></ruby></p><span class="small">时间段</span></div>
+        <div class="word"><p class="jp"><ruby>週何回<rt>しゅうなんかい</rt></ruby></p><span class="small">每周几次</span></div>
+        <div class="word"><p class="jp"><ruby>何曜日<rt>なんようび</rt></ruby></p><span class="small">星期几</span></div>
+        <div class="word"><p class="jp"><ruby>平日<rt>へいじつ</rt></ruby></p><span class="small">工作日</span></div>
+        <div class="word"><p class="jp"><ruby>土日祝<rt>どにちしゅく</rt></ruby></p><span class="small">周末节假日</span></div>
+        <div class="word"><p class="jp"><ruby>早朝<rt>そうちょう</rt></ruby></p><span class="small">清晨</span></div>
+        <div class="word"><p class="jp"><ruby>夕方<rt>ゆうがた</rt></ruby></p><span class="small">傍晚</span></div>
+        <div class="word"><p class="jp"><ruby>深夜<rt>しんや</rt></ruby></p><span class="small">深夜</span></div>
+        <div class="word"><p class="jp"><ruby>研修<rt>けんしゅう</rt></ruby></p><span class="small">培训</span></div>
+        <div class="word"><p class="jp"><ruby>交通費<rt>こうつうひ</rt></ruby></p><span class="small">交通费</span></div>
+        <div class="word"><p class="jp"><ruby>通勤<rt>つうきん</rt></ruby></p><span class="small">通勤</span></div>
+        <div class="word"><p class="jp"><ruby>在留<rt>ざいりゅう</rt></ruby>カード</p><span class="small">在留卡</span></div>
+        <div class="word"><p class="jp"><ruby>資格外活動許可<rt>しかくがいかつどうきょか</rt></ruby></p><span class="small">资格外活动许可</span></div>
+        <div class="word"><p class="jp"><ruby>月火水木金土日<rt>げつかすいもくきんどにち</rt></ruby></p><span class="small">星期缩略</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>面试前检查</h2>
+        <span class="tag">出门前看一眼</span>
+      </div>
+      <ul class="checklist">
+        <li>提前 5 分钟左右到店，不要迟到，也不要早到太久。</li>
+        <li>履历书提前填好，放进文件夹；带在留卡、学生证、能写字的笔。</li>
+        <li>把可上班曜日和时间写在纸上，电话里也可以照着读。</li>
+        <li>听不懂时说「もう一度お願いします」或「少しゆっくり話してください」。</li>
+        <li>重点表现：守时、认真、不懂会确认、愿意学习日语和接客。</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const scenes = {
+      "call-start": {
+        title: "开始：打电话询问",
+        desc: "先确认是否还在招募。这里会分成正在招募、不招募、店长不在、听不清四条线。",
+        status: "电话",
+        lines: [
+          { who: "店员", type: "staff", jp: "お<ruby>電話<rt>でんわ</rt></ruby>ありがとうございます。〇〇<ruby>店<rt>てん</rt></ruby>です。", cn: "您好，这里是〇〇店。" },
+          { who: "你", type: "me", jp: "<ruby>お忙<rt>いそが</rt></ruby>しいところ<ruby>失礼<rt>しつれい</rt></ruby>いたします。<ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>応募<rt>おうぼ</rt></ruby>についてお<ruby>電話<rt>でんわ</rt></ruby>いたしました。<ruby>現在<rt>げんざい</rt></ruby>、<ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>募集<rt>ぼしゅう</rt></ruby>はされていますでしょうか。", cn: "不好意思打扰了。我想咨询打工应聘。请问现在还在招人吗？" }
+        ],
+        choices: [
+          { label: "对方说：正在招募", scene: "call-open" },
+          { label: "对方说：不招募", scene: "call-closed", end: true },
+          { label: "对方说：店长不在", scene: "manager-away" },
+          { label: "听不清，请对方重复", scene: "cant-hear" }
+        ]
+      },
+      "call-open": {
+        title: "电话分支：正在招募",
+        desc: "对方确认正在招募，通常会问你的姓名、身份和联系方式。",
+        status: "电话",
+        lines: [
+          { who: "店员", type: "staff", jp: "はい、<ruby>現在<rt>げんざい</rt></ruby><ruby>募集<rt>ぼしゅう</rt></ruby>しています。お<ruby>名前<rt>なまえ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。", cn: "是的，现在正在招。请告诉我姓名。" },
+          { who: "你", type: "me", jp: "ありがとうございます。<ruby>九州大学<rt>きゅうしゅうだいがく</rt></ruby><ruby>大学院<rt>だいがくいん</rt></ruby>の<ruby>留学生<rt>りゅうがくせい</rt></ruby>で、<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。", cn: "谢谢。我是九州大学大学院的留学生，姓李。" },
+          { who: "店员", type: "staff", jp: "ご<ruby>連絡先<rt>れんらくさき</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えていただけますか。", cn: "可以告诉我联系方式吗？" },
+          { who: "你", type: "me", jp: "<ruby>電話番号<rt>でんわばんごう</rt></ruby>は〇〇〇-〇〇〇〇-〇〇〇〇です。", cn: "电话号码是……" }
+        ],
+        choices: [
+          { label: "继续：对方问排班", scene: "schedule-check" },
+          { label: "跳到：直接约面试", scene: "book-interview" },
+          { label: "回到开始", scene: "call-start" }
+        ]
+      },
+      "call-closed": {
+        title: "电话分支：现在不招募",
+        desc: "这条线礼貌结束即可，不要追问太多。",
+        status: "结束",
+        lines: [
+          { who: "店员", type: "staff", jp: "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。<ruby>現在<rt>げんざい</rt></ruby>は<ruby>募集<rt>ぼしゅう</rt></ruby>しておりません。", cn: "不好意思，现在没有招聘。" },
+          { who: "你", type: "me", jp: "かしこまりました。<ruby>お忙<rt>いそが</rt></ruby>しいところ、ありがとうございました。<ruby>失礼<rt>しつれい</rt></ruby>いたします。", cn: "明白了。感谢您百忙之中接电话。打扰了。" }
+        ],
+        choices: [
+          { label: "换一家店：重新开始", scene: "call-start" }
+        ]
+      },
+      "manager-away": {
+        title: "电话分支：店长不在",
+        desc: "留下电话和可接电话时间，等待回拨。",
+        status: "电话",
+        lines: [
+          { who: "店员", type: "staff", jp: "<ruby>店長<rt>てんちょう</rt></ruby>が<ruby>今<rt>いま</rt></ruby><ruby>不在<rt>ふざい</rt></ruby>ですので、<ruby>折<rt>お</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>しご<ruby>連絡<rt>れんらく</rt></ruby>します。", cn: "店长现在不在，之后给你回电话。" },
+          { who: "你", type: "me", jp: "かしこまりました。<ruby>私<rt>わたし</rt></ruby>の<ruby>電話番号<rt>でんわばんごう</rt></ruby>は〇〇〇-〇〇〇〇-〇〇〇〇です。<ruby>本日<rt>ほんじつ</rt></ruby>ですと、〇<ruby>時以降<rt>じいこう</rt></ruby>は<ruby>電話<rt>でんわ</rt></ruby>に<ruby>出<rt>で</rt></ruby>られます。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。", cn: "明白了。我的电话是……今天几点以后可以接电话。麻烦您了。" }
+        ],
+        choices: [
+          { label: "回拨后：正在招募", scene: "call-open" },
+          { label: "回拨后：不招募", scene: "call-closed", end: true },
+          { label: "回到开始", scene: "call-start" }
+        ]
+      },
+      "cant-hear": {
+        title: "电话分支：听不清",
+        desc: "不要硬猜。先请求重复或放慢，再回到原路线。",
+        status: "救场",
+        lines: [
+          { who: "店员", type: "staff", jp: "すみません、少し早口で説明される。", cn: "对方说得很快，你没听清。" },
+          { who: "你", type: "me", jp: "すみません、もう<ruby>一度<rt>いちど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いできますでしょうか。<ruby>少<rt>すこ</rt></ruby>しゆっくり<ruby>話<rt>はな</rt></ruby>していただけますと<ruby>助<rt>たす</rt></ruby>かります。", cn: "不好意思，可以再说一遍吗？如果能稍微慢一点说就太好了。" }
+        ],
+        choices: [
+          { label: "听清后：正在招募", scene: "call-open" },
+          { label: "听清后：不招募", scene: "call-closed", end: true },
+          { label: "回到开始", scene: "call-start" }
+        ]
+      },
+      "schedule-check": {
+        title: "电话分支：确认排班",
+        desc: "如果对方有兴趣，下一步通常是问你能上哪些班。",
+        status: "电话",
+        lines: [
+          { who: "店员/店长", type: "staff", jp: "<ruby>週<rt>しゅう</rt></ruby>にどのくらい<ruby>入<rt>はい</rt></ruby>れますか。<ruby>働<rt>はたら</rt></ruby>ける<ruby>曜日<rt>ようび</rt></ruby>と<ruby>時間帯<rt>じかんたい</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。", cn: "每周大概能上几次？请告诉我能工作的星期和时间段。" },
+          { who: "你", type: "me", jp: "<ruby>平日<rt>へいじつ</rt></ruby>は<ruby>授業<rt>じゅぎょう</rt></ruby>がありますので、〇<ruby>曜日<rt>ようび</rt></ruby>と〇<ruby>曜日<rt>ようび</rt></ruby>の<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。<ruby>土日<rt>どにち</rt></ruby>は<ruby>比較的<rt>ひかくてき</rt></ruby><ruby>調整<rt>ちょうせい</rt></ruby>しやすいです。<ruby>留学生<rt>りゅうがくせい</rt></ruby>ですので、<ruby>週<rt>しゅう</rt></ruby>28<ruby>時間以内<rt>じかんいない</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>きたいです。", cn: "平日有课，所以星期几和星期几傍晚可以。周末相对容易调整。因为是留学生，希望在每周 28 小时以内工作。" }
+        ],
+        choices: [
+          { label: "条件合适：约面试", scene: "book-interview" },
+          { label: "条件不合：礼貌结束", scene: "schedule-reject", end: true },
+          { label: "回到电话开始", scene: "call-start" }
+        ]
+      },
+      "schedule-reject": {
+        title: "电话分支：排班不合",
+        desc: "对方可能因为时间带不合而结束。保持礼貌，换下一家。",
+        status: "结束",
+        lines: [
+          { who: "店员/店长", type: "staff", jp: "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。その<ruby>時間帯<rt>じかんたい</rt></ruby>は<ruby>今<rt>いま</rt></ruby><ruby>募集<rt>ぼしゅう</rt></ruby>していません。", cn: "不好意思，那个时间段现在没有招聘。" },
+          { who: "你", type: "me", jp: "かしこまりました。<ruby>お忙<rt>いそが</rt></ruby>しいところ、ありがとうございました。<ruby>失礼<rt>しつれい</rt></ruby>いたします。", cn: "明白了。感谢您百忙之中接电话。打扰了。" }
+        ],
+        choices: [
+          { label: "换一家店：重新开始", scene: "call-start" }
+        ]
+      },
+      "book-interview": {
+        title: "电话分支：约面试",
+        desc: "重点是重复确认日期、时间、地点、是否带履历书。",
+        status: "电话",
+        lines: [
+          { who: "店员/店长", type: "staff", jp: "それでは、<ruby>面接<rt>めんせつ</rt></ruby>に<ruby>来<rt>き</rt></ruby>ていただきたいです。〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時<rt>じ</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。", cn: "那么希望你来面试。几月几日几点可以吗？" },
+          { who: "你", type: "me", jp: "はい、<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です。〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時<rt>じ</rt></ruby>ですね。<ruby>当日<rt>とうじつ</rt></ruby>は<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>持参<rt>じさん</rt></ruby>いたします。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。", cn: "可以。是几月几日几点对吧？当天我会带简历过去。请多关照。" }
+        ],
+        choices: [
+          { label: "进入：面试当天", scene: "interview-start" },
+          { label: "时间不合，换时间", scene: "book-reschedule" },
+          { label: "回路线图开始", scene: "call-start" }
+        ]
+      },
+      "book-reschedule": {
+        title: "电话分支：面试时间不合",
+        desc: "不能去就提出替代时间，不要沉默。",
+        status: "电话",
+        lines: [
+          { who: "店员/店长", type: "staff", jp: "〇<ruby>月<rt>がつ</rt></ruby>〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時<rt>じ</rt></ruby>はどうですか。", cn: "几月几日几点怎么样？" },
+          { who: "你", type: "me", jp: "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありません。その<ruby>時間<rt>じかん</rt></ruby>は<ruby>授業<rt>じゅぎょう</rt></ruby>があります。〇<ruby>日<rt>にち</rt></ruby>の〇<ruby>時以降<rt>じいこう</rt></ruby>でしたら<ruby>伺<rt>うかが</rt></ruby>えますが、いかがでしょうか。", cn: "不好意思。那个时间我有课。几日几点以后可以过去，可以吗？" }
+        ],
+        choices: [
+          { label: "对方同意：进入面试当天", scene: "interview-start" },
+          { label: "回到约面试", scene: "book-interview" }
+        ]
+      },
+      "visit-store": {
+        title: "到店询问路线",
+        desc: "现场询问时也会分成负责人在/不在。优势是能看表情，压力比电话小一点。",
+        status: "到店",
+        lines: [
+          { who: "店员", type: "staff", jp: "いらっしゃいませ。", cn: "欢迎光临。" },
+          { who: "你", type: "me", jp: "すみません。<ruby>アルバイト<rt>あるばいと</rt></ruby>の<ruby>応募<rt>おうぼ</rt></ruby>について<ruby>伺<rt>うかが</rt></ruby>いたいのですが、<ruby>担当<rt>たんとう</rt></ruby>の<ruby>方<rt>かた</rt></ruby>はいらっしゃいますでしょうか。", cn: "不好意思。我想咨询打工应聘，请问负责人在吗？" }
+        ],
+        choices: [
+          { label: "负责人在", scene: "visit-manager" },
+          { label: "负责人不在", scene: "visit-away" },
+          { label: "回到电话路线", scene: "call-start" }
+        ]
+      },
+      "visit-manager": {
+        title: "到店分支：负责人在",
+        desc: "可能当场简单聊，也可能直接约面试。",
+        status: "到店",
+        lines: [
+          { who: "店员", type: "staff", jp: "<ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください。<ruby>担当者<rt>たんとうしゃ</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>んできます。", cn: "请稍等，我去叫负责人。" },
+          { who: "你", type: "me", jp: "はい、ありがとうございます。", cn: "好的，谢谢。" },
+          { who: "负责人", type: "staff", jp: "お<ruby>待<rt>ま</rt></ruby>たせしました。<ruby>応募<rt>おうぼ</rt></ruby>の<ruby>件<rt>けん</rt></ruby>ですね。お<ruby>名前<rt>なまえ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。", cn: "久等了。是应聘的事情对吧？请告诉我姓名。" },
+          { who: "你", type: "me", jp: "<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<ruby>九州大学<rt>きゅうしゅうだいがく</rt></ruby><ruby>大学院<rt>だいがくいん</rt></ruby>の<ruby>留学生<rt>りゅうがくせい</rt></ruby>です。", cn: "我姓李，是九州大学大学院的留学生。" }
+        ],
+        choices: [
+          { label: "继续：确认排班", scene: "schedule-check" },
+          { label: "直接约面试", scene: "book-interview" }
+        ]
+      },
+      "visit-away": {
+        title: "到店分支：负责人不在",
+        desc: "留下联系方式，本质上回到电话路线。",
+        status: "到店",
+        lines: [
+          { who: "店员", type: "staff", jp: "<ruby>担当者<rt>たんとうしゃ</rt></ruby>が<ruby>今<rt>いま</rt></ruby>いないので、<ruby>後<rt>あと</rt></ruby>でご<ruby>連絡<rt>れんらく</rt></ruby>します。", cn: "负责人现在不在，之后联系你。" },
+          { who: "你", type: "me", jp: "かしこまりました。<ruby>連絡先<rt>れんらくさき</rt></ruby>をお<ruby>伝<rt>つた</rt></ruby>えしてもよろしいでしょうか。<ruby>電話番号<rt>でんわばんごう</rt></ruby>は〇〇〇-〇〇〇〇-〇〇〇〇です。", cn: "明白了。我可以留下联系方式吗？电话是……" }
+        ],
+        choices: [
+          { label: "回拨后：正在招募", scene: "call-open" },
+          { label: "回到到店询问", scene: "visit-store" }
+        ]
+      },
+      "interview-start": {
+        title: "面试当天：进店到坐下",
+        desc: "目标是礼貌、准时、确认负责人。",
+        status: "面试",
+        lines: [
+          { who: "店员", type: "staff", jp: "いらっしゃいませ。<ruby>本日<rt>ほんじつ</rt></ruby>はどうされましたか。", cn: "欢迎光临。今天有什么事吗？" },
+          { who: "你", type: "me", jp: "こんにちは。<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<ruby>本日<rt>ほんじつ</rt></ruby>〇<ruby>時<rt>じ</rt></ruby>に<ruby>アルバイト<rt>あるばいと</rt></ruby><ruby>面接<rt>めんせつ</rt></ruby>の<ruby>予約<rt>よやく</rt></ruby>をしております。<ruby>担当<rt>たんとう</rt></ruby>の<ruby>方<rt>かた</rt></ruby>はいらっしゃいますでしょうか。", cn: "您好，我姓李。我预约了今天几点的打工面试，请问负责人在吗？" },
+          { who: "店员/负责人", type: "staff", jp: "はい、<ruby>面接<rt>めんせつ</rt></ruby>ですね。こちらへどうぞ。お<ruby>掛<rt>か</rt></ruby>けください。", cn: "好的，是面试对吧。请到这边。请坐。" },
+          { who: "你", type: "me", jp: "<ruby>失礼<rt>しつれい</rt></ruby>いたします。ありがとうございます。", cn: "打扰了。谢谢。" }
+        ],
+        choices: [
+          { label: "进入：正式面试", scene: "interview-main" },
+          { label: "听不清：请求重复", scene: "cant-hear" }
+        ]
+      },
+      "interview-main": {
+        title: "正式面试：主线问答",
+        desc: "这里按常见顺序连续练：履历书、自我介绍、志望动机、排班、经验、日语。",
+        status: "面试",
+        lines: [
+          { who: "面试官", type: "staff", jp: "<ruby>履歴書<rt>りれきしょ</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。", cn: "请给我简历。" },
+          { who: "你", type: "me", jp: "こちらが<ruby>履歴書<rt>りれきしょ</rt></ruby>です。ご<ruby>確認<rt>かくにん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いいたします。", cn: "这是我的简历，麻烦您确认。" },
+          { who: "面试官", type: "staff", jp: "<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>自己紹介<rt>じこしょうかい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。", cn: "请简单自我介绍。" },
+          { who: "你", type: "me", jp: "<ruby>李<rt>り</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。<ruby>現在<rt>げんざい</rt></ruby>、<ruby>九州大学<rt>きゅうしゅうだいがく</rt></ruby><ruby>大学院<rt>だいがくいん</rt></ruby><ruby>システム情報科学府<rt>しすてむじょうほうかがくふ</rt></ruby>の<ruby>情報理工学専攻<rt>じょうほうりこうがくせんこう</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>しています。<ruby>日本語<rt>にほんご</rt></ruby>はN2を<ruby>持<rt>も</rt></ruby>っていて、<ruby>現在<rt>げんざい</rt></ruby>N1の<ruby>勉強<rt>べんきょう</rt></ruby>をしています。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。", cn: "我是李。现在在九州大学大学院系统情报科学府情报理工学专攻学习。日语有 N2，现在正在备考 N1。请多关照。" },
+          { who: "面试官", type: "staff", jp: "<ruby>応募<rt>おうぼ</rt></ruby>した<ruby>理由<rt>りゆう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。", cn: "请告诉我应聘理由。" },
+          { who: "你", type: "me", jp: "<ruby>日本語<rt>にほんご</rt></ruby>をもっと<ruby>上達<rt>じょうたつ</rt></ruby>させたいことと、<ruby>日本<rt>にほん</rt></ruby>の<ruby>接客<rt>せっきゃく</rt></ruby>マナーを<ruby>学<rt>まな</rt></ruby>びたいことが<ruby>応募理由<rt>おうぼりゆう</rt></ruby>です。こちらのお<ruby>店<rt>みせ</rt></ruby>はよく<ruby>利用<rt>りよう</rt></ruby>していて、<ruby>店員<rt>てんいん</rt></ruby>さんの<ruby>対応<rt>たいおう</rt></ruby>が<ruby>丁寧<rt>ていねい</rt></ruby>だと<ruby>感<rt>かん</rt></ruby>じました。", cn: "想提高日语，也想学习日本接客礼仪。我经常使用这家店，觉得店员应对很礼貌。" },
+          { who: "面试官", type: "staff", jp: "<ruby>週<rt>しゅう</rt></ruby>に<ruby>何回<rt>なんかい</rt></ruby><ruby>入<rt>はい</rt></ruby>れますか。どの<ruby>時間帯<rt>じかんたい</rt></ruby>に<ruby>働<rt>はたら</rt></ruby>けますか。", cn: "每周能上几次？哪个时间段可以工作？" },
+          { who: "你", type: "me", jp: "<ruby>平日<rt>へいじつ</rt></ruby>は<ruby>授業<rt>じゅぎょう</rt></ruby>がありますので、〇<ruby>曜日<rt>ようび</rt></ruby>と〇<ruby>曜日<rt>ようび</rt></ruby>の<ruby>夕方<rt>ゆうがた</rt></ruby>から<ruby>働<rt>はたら</rt></ruby>けます。<ruby>土日<rt>どにち</rt></ruby>は<ruby>比較的<rt>ひかくてき</rt></ruby><ruby>調整<rt>ちょうせい</rt></ruby>しやすいです。", cn: "平日有课，所以星期几和星期几傍晚可以。周末相对容易调整。" },
+          { who: "面试官", type: "staff", jp: "コンビニで<ruby>働<rt>はたら</rt></ruby>いた<ruby>経験<rt>けいけん</rt></ruby>はありますか。", cn: "有在便利店工作的经验吗？" },
+          { who: "你", type: "me", jp: "コンビニでの<ruby>アルバイト経験<rt>あるばいとけいけん</rt></ruby>はありません。ただ、メモを<ruby>取<rt>と</rt></ruby>りながらまじめに<ruby>勉強<rt>べんきょう</rt></ruby>します。<ruby>分<rt>わ</rt></ruby>からないことは<ruby>必<rt>かなら</rt></ruby>ず<ruby>確認<rt>かくにん</rt></ruby>してから<ruby>行動<rt>こうどう</rt></ruby>します。", cn: "没有便利店经验。但我会认真记笔记学习，不懂的事情一定确认后再行动。" },
+          { who: "面试官", type: "staff", jp: "<ruby>日本語<rt>にほんご</rt></ruby>での<ruby>接客<rt>せっきゃく</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。", cn: "用日语接客没问题吗？" },
+          { who: "你", type: "me", jp: "<ruby>日本語<rt>にほんご</rt></ruby>はN2を<ruby>持<rt>も</rt></ruby>っていて、<ruby>現在<rt>げんざい</rt></ruby>N1の<ruby>勉強<rt>べんきょう</rt></ruby>をしています。<ruby>日常会話<rt>にちじょうかいわ</rt></ruby>はできますが、<ruby>分<rt>わ</rt></ruby>からない<ruby>言葉<rt>ことば</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>必<rt>かなら</rt></ruby>ず<ruby>確認<rt>かくにん</rt></ruby>します。", cn: "日语有 N2，现在正在备考 N1。日常会话可以，但有不懂的词会一定确认。" }
+        ],
+        choices: [
+          { label: "进入：面试结束", scene: "interview-end" },
+          { label: "听不清：救场", scene: "cant-hear" }
+        ]
+      },
+      "interview-end": {
+        title: "面试结束：结果怎么说",
+        desc: "最后也有分支：之后通知，或者当场说条件不合。",
+        status: "结束",
+        lines: [
+          { who: "面试官", type: "staff", jp: "<ruby>結果<rt>けっか</rt></ruby>は<ruby>後日<rt>ごじつ</rt></ruby>ご<ruby>連絡<rt>れんらく</rt></ruby>します。<ruby>本日<rt>ほんじつ</rt></ruby>はありがとうございました。", cn: "结果之后联系你。今天谢谢你。" },
+          { who: "你", type: "me", jp: "<ruby>本日<rt>ほんじつ</rt></ruby>はお<ruby>時間<rt>じかん</rt></ruby>をいただき、ありがとうございました。よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。<ruby>失礼<rt>しつれい</rt></ruby>いたします。", cn: "今天感谢您抽时间。请多关照。告辞了。" }
+        ],
+        choices: [
+          { label: "另一种：当场条件不合", scene: "interview-reject", end: true },
+          { label: "重新练电话路线", scene: "call-start" }
+        ]
+      },
+      "interview-reject": {
+        title: "面试结束分支：条件不合",
+        desc: "即使不合适，也保持礼貌收尾。",
+        status: "结束",
+        lines: [
+          { who: "面试官", type: "staff", jp: "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>希望<rt>きぼう</rt></ruby>の<ruby>時間帯<rt>じかんたい</rt></ruby>が<ruby>合<rt>あ</rt></ruby>わないため、<ruby>採用<rt>さいよう</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しいです。", cn: "这次因为希望时间段不合，录用比较困难。" },
+          { who: "你", type: "me", jp: "かしこまりました。<ruby>本日<rt>ほんじつ</rt></ruby>はお<ruby>時間<rt>じかん</rt></ruby>をいただき、ありがとうございました。<ruby>失礼<rt>しつれい</rt></ruby>いたします。", cn: "明白了。今天感谢您抽时间。告辞了。" }
+        ],
+        choices: [
+          { label: "重新练电话路线", scene: "call-start" }
+        ]
+      }
+    };
+
+    function renderScene(sceneId) {
+      const scene = scenes[sceneId] || scenes["call-start"];
+      document.querySelectorAll(".route-node").forEach((node) => {
+        node.classList.toggle("active", node.dataset.scene === sceneId);
+      });
+
+      document.querySelector("#scene-title").textContent = scene.title;
+      document.querySelector("#scene-desc").textContent = scene.desc;
+      document.querySelector("#scene-status").textContent = scene.status;
+
+      const lineRoot = document.querySelector("#scene-lines");
+      lineRoot.innerHTML = scene.lines.map((line) => `
+        <div class="line ${line.type}">
+          <div class="speaker">${line.who}</div>
+          <p class="jp">${line.jp}</p>
+          <p class="cn">${line.cn}</p>
+        </div>
+      `).join("");
+
+      const actionRoot = document.querySelector("#scene-actions");
+      actionRoot.innerHTML = scene.choices.map((choice) => `
+        <button class="choice-button ${choice.end ? "end-choice" : ""}" type="button" data-next-scene="${choice.scene}">
+          ${choice.label}
+        </button>
+      `).join("");
+    }
+
+    document.querySelectorAll(".route-node").forEach((node) => {
+      node.addEventListener("click", () => {
+        renderScene(node.dataset.scene);
+        document.querySelector("#scene-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
+    document.querySelector("#scene-actions").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-next-scene]");
+      if (!button) return;
+      renderScene(button.dataset.nextScene);
+      document.querySelector("#scene-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    renderScene("call-start");
+
+    const app = document.querySelector("#app");
+    const details = [...document.querySelectorAll("details")];
+
+    document.querySelector("[data-expand]").addEventListener("click", () => {
+      details.forEach((item) => item.open = true);
+    });
+
+    document.querySelector("[data-collapse]").addEventListener("click", () => {
+      details.forEach((item) => item.open = false);
+    });
+
+    document.querySelector("[data-toggle-rt]").addEventListener("click", () => {
+      app.classList.toggle("hidden-rt");
+    });
+
+    document.querySelector("[data-toggle-cn]").addEventListener("click", () => {
+      app.classList.toggle("hidden-cn");
+    });
+
+    const links = [...document.querySelectorAll("nav a")];
+    const sections = links
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (!visible) return;
+
+      links.forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === `#${visible.target.id}`);
+      });
+    }, { rootMargin: "-88px 0px -55% 0px", threshold: [0.2, 0.4, 0.7] });
+
+    sections.forEach((section) => observer.observe(section));
+  </script>
+</body>
+</html>
